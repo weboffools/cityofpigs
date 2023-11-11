@@ -75,17 +75,18 @@ html {
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
+  background: var(--main-color-400);
 }
 
 .container {
   display: grid;
   margin: 0 auto;
-  height: 100%;
-  width: 70vw;
+  width: 60vw;
   background: #71f8f8;
   justify-items: center;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr 2fr 1fr;
+  gap: 20px;
 }
 
 header {
@@ -101,12 +102,21 @@ header ul {
 }
 
 header ul li {
+  display: grid;
+  justify-items: center;
+  align-self: center;
+  font-weight: 700;
+  font-size: 1.25rem;
   justify-self: center;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
 }
 
-header ul li:hover {
+header ul li:hover, li:active {
   background: #71f8f8;
+  box-shadow: 0px 6px 3px var(--main-color-400);
 }
 
 .heading-div {
@@ -122,6 +132,16 @@ header ul li:hover {
   border: 10px ridge var(--main-color-600);
   border-radius: 3rem;
   font-weight: 900;
+  align-self: center;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 300;
+  justify-self: center;
+  align-self: center;
   text-align: center;
 }
 
@@ -131,14 +151,14 @@ header ul li:hover {
   align-self: center;
 }
 
-.sub-heading {
+.quote-text {
   font-size: 1.5rem;
   font-weight: 400;
 }
 
 
 .pig-img {
-  width: 80%;
+  width: 100%;
 }
 
 .pig-icon {
@@ -147,11 +167,13 @@ header ul li:hover {
 }
 
 .pig-icon-right {
-  top: -15px;
+  top: -20px;
   right: -60px;
+  transform: rotate(15deg);
 }
 
 .pig-icon-left {
-  top: -15px;
+  top: -20px;
   left: -60px;
+  transform: rotate(-15deg);
 }

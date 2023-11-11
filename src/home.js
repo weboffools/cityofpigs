@@ -11,15 +11,19 @@ function mainComponent() {
   mainHeading.classList.add('name-heading');
   mainHeading.textContent = 'City of Pigs';
 
+  const subHeading = document.createElement('h2');
+  subHeading.classList.add('sub-heading');
+  subHeading.textContent = 'For A Simpler Way of Life';
+
   const quoteDiv = document.createElement('div');
   quoteDiv.classList.add('quote');
-  const subHeading = document.createElement('h2');
+  const quote = document.createElement('h2');
   const author = document.createElement('p');
-  subHeading.classList.add('sub-heading');
-  subHeading.textContent =
+  quote.classList.add('quote-text');
+  quote.textContent =
     '...and they will roast myrtle-berries and acorns at the fire, drinking in moderation.';
   author.textContent = '- Socrates';
-  quoteDiv.appendChild(subHeading);
+  quoteDiv.appendChild(quote);
   quoteDiv.appendChild(author);
 
   const pigIcon = document.createElement('img');
@@ -33,6 +37,7 @@ function mainComponent() {
   pigIcon2.setAttribute('src', './images/pig.svg');
 
   headingDiv.appendChild(mainHeading);
+  headingDiv.appendChild(subHeading);
   headingDiv.appendChild(pigIcon);
   headingDiv.appendChild(pigIcon2);
 
