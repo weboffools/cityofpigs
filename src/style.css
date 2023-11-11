@@ -88,6 +88,27 @@ body {
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
+header {
+  width: 80%;
+  height: 80px;
+}
+
+header ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  background: var(--main-color-100);
+}
+
+header ul li {
+  justify-self: center;
+  padding: 10px;
+}
+
+header ul li:hover {
+  background: #71f8f8;
+}
+
 .heading-div {
   display: grid;
   width: 50%;
@@ -104,18 +125,20 @@ body {
   text-align: center;
 }
 
-.sub-heading {
-  font-size: 1.5rem;
-  font-weight: 400;
+.quote {
+  width: 50%;
   justify-self: center;
   align-self: center;
 }
 
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+
 .pig-img {
-  width: 400px;
-  border-radius: 15px;
-  border: 2px solid var(--main-color-400);;
-  justify-self: center;
+  width: 80%;
 }
 
 .pig-icon {
