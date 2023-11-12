@@ -1,3 +1,6 @@
+import littlePig from './images/pig.svg';
+import pigImage from './images/pigs.jpeg';
+
 function mainComponent() {
   const mainContent = document.createElement('div');
   mainContent.classList.add('main-content');
@@ -27,12 +30,12 @@ function mainComponent() {
   const pigIcon = document.createElement('img');
   pigIcon.classList.add('pig-icon');
   pigIcon.classList.add('pig-icon-right');
-  pigIcon.setAttribute('src', './images/pig.svg');
+  pigIcon.setAttribute('src', littlePig);
 
   const pigIcon2 = document.createElement('img');
   pigIcon2.classList.add('pig-icon');
   pigIcon2.classList.add('pig-icon-left');
-  pigIcon2.setAttribute('src', './images/pig.svg');
+  pigIcon2.setAttribute('src', littlePig);
 
   headingDiv.appendChild(mainHeading);
   headingDiv.appendChild(subHeading);
@@ -40,7 +43,7 @@ function mainComponent() {
   headingDiv.appendChild(pigIcon2);
 
   const pigImage = document.createElement('img');
-  pigImage.setAttribute('src', './images/pigs.jpeg');
+  pigImage.setAttribute('src', pigImage);
   pigImage.classList.add('pig-img');
 
   mainContent.appendChild(headingDiv);

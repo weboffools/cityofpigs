@@ -1,3 +1,11 @@
+import acornImg from './images/acorns.jpeg';
+import onionImg from './images/onions.jpeg';
+import barleyImg from './images/barley.jpeg';
+import figImg from './images/figs.jpeg';
+import rootImg from './images/roots.jpeg';
+import wineImg from './images/wine.jpeg';
+import cheeseImg from './images/cheese.jpeg';
+
 function menuDiv() {
   const mainContainer = document.createElement('div');
   mainContainer.classList.add('menu-container');
@@ -12,43 +20,43 @@ function menuDiv() {
   const menuItems = [
     {
       name: 'Acorns',
-      image: './images/acorns.jpeg',
+      image: acornImg,
       content: 'Nutty goodness',
       dom: {},
     },
     {
       name: 'Onions',
-      image: './images/onions.jpeg',
+      image: onionImg,
       content: 'Pungent',
       dom: {},
     },
     {
       name: 'Barley Cakes',
-      image: './images/barley.jpeg',
+      image: barleyImg,
       content: 'Noble',
       dom: {},
     },
     {
       name: 'Figs',
-      image: './images/figs.jpeg',
+      image: figImg,
       content: 'A fine dessert',
       dom: {},
     },
     {
       name: 'Boiled Roots',
-      image: './images/roots.jpeg',
+      image: rootImg,
       content: 'Snout dug',
       dom: {},
     },
     {
       name: 'Wine',
-      image: './images/wine.jpeg',
+      image: wineImg,
       content: 'Our house special',
       dom: {},
     },
     {
       name: 'Cheese',
-      image: './images/cheese.jpeg',
+      image: cheeseImg,
       content: 'A relish',
       dom: {},
     }
