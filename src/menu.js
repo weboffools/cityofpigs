@@ -45,6 +45,12 @@ function menuDiv() {
       image: './images/wine.jpeg',
       content: 'Our house special',
       dom: {},
+    },
+    {
+      name: 'Cheese',
+      image: './images/cheese.jpeg',
+      content: 'A relish',
+      dom: {},
     }
   ];
   
