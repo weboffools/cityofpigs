@@ -86,8 +86,8 @@ function menuDiv() {
     let item = menuItems[i];
     item.dom = new MenuItem(item.name);
     itemNode.classList.add('menu-item');
-    itemNode.appendChild(item.dom.addImg(item.image));
     itemNode.appendChild(item.dom.addHeading(item.name));
+    itemNode.appendChild(item.dom.addImg(item.image));
     itemNode.appendChild(item.dom.addDescription(item.content));
     mainContainer.appendChild(itemNode);
   }
