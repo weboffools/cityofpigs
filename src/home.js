@@ -1,8 +1,6 @@
-import makeHeader from './header.js';
-
 function mainComponent() {
-  const mainContainer = document.createElement('div');
-  mainContainer.classList.add('container');
+  const mainContent = document.createElement('div');
+  mainContent.classList.add('main-content');
 
   const headingDiv = document.createElement('div');
   headingDiv.classList.add('heading-div');
@@ -45,12 +43,11 @@ function mainComponent() {
   pigImage.setAttribute('src', './images/pigs.jpeg');
   pigImage.classList.add('pig-img');
 
-  mainContainer.appendChild(makeHeader());
-  mainContainer.appendChild(headingDiv);
-  mainContainer.appendChild(pigImage);
-  mainContainer.appendChild(quoteDiv);
+  mainContent.appendChild(headingDiv);
+  mainContent.appendChild(pigImage);
+  mainContent.appendChild(quoteDiv);
 
-  return mainContainer;
+  return mainContent;
 }
 
 export default mainComponent;
