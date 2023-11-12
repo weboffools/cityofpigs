@@ -1,5 +1,5 @@
 import littlePig from './images/pig.svg';
-import pigImage from './images/pigs.jpeg';
+import pigsImage from './images/pigs.jpeg';
 
 function mainComponent() {
   const mainContent = document.createElement('div');
@@ -43,7 +43,7 @@ function mainComponent() {
   headingDiv.appendChild(pigIcon2);
 
   const pigImage = document.createElement('img');
-  pigImage.setAttribute('src', pigImage);
+  pigImage.setAttribute('src', pigsImage);
   pigImage.classList.add('pig-img');
 
   mainContent.appendChild(headingDiv);
