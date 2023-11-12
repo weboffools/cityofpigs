@@ -8,6 +8,7 @@ function makeHeader() {
 
   const home = document.createElement('li');
   home.classList.add('tab');
+  home.classList.add('home-tab');
   home.textContent = 'Home';
   const homeIcon = new Image();
   homeIcon.src = hIcon;
@@ -17,6 +18,7 @@ function makeHeader() {
 
   const menu = document.createElement('li');
   menu.classList.add('tab');
+  menu.classList.add('menu-tab');
   menu.textContent = 'Menu';
   const menuIcon = new Image();
   menuIcon.src = mIcon;
@@ -25,6 +27,7 @@ function makeHeader() {
 
   const contact = document.createElement('li');
   contact.classList.add('tab');
+  contact.classList.add('contact-tab');
   contact.textContent = 'Contact';
   const contactIcon = new Image();
   contactIcon.src = cIcon;
