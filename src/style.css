@@ -91,7 +91,7 @@ body {
 */
 
 header {
-  margin: 0 auto;
+  margin: 0 auto;t 
   width: clamp(600px, 60vw, 1000px);
   height: 100%;
 }
